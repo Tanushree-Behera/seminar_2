@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* NAVIGATION BAR */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top:0px;
+}
+#navbar::before{
+    content: "";
+    background-color: white;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity:0.7;
+}
+#logo{
+    margin: 10px 25px;
+}
+#logo img{
+    height: 80px;
+    width: 80px;
+    mix-blend-mode:multiply;
+}
+#navbar ul{
+    display: flex;
+    font-family: "Pacifico", cursive;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 25px;
+    padding: 3px 25px;
+}
+#navbar ul li a{
+    color:black;
+    display: block;
+    padding: 3px 35px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: darkred;
+    text-decoration:underline;
+}
+
+/* MENU SECTION */
+
+#menu{
+    background: url("herbs.jpg") no-repeat center center/cover;
+    width: 100%;
+    height: 350px;
+    display: block;
+    margin: auto;
+    background-attachment: fixed;
+}
+#menu h1{
+    display: block;
+    font-size: 50px;
+    font-family:"Bree Serif", serif;
+    text-align: center;
+    padding-top: 50px;
+    backdrop-filter: blur(10px);
+}
+#title h1{
+    text-align: center;
+    font-size: 40px;
+    font-family:"Bree Serif", serif;
+    color: darkred;
+    padding: 80px 20px;
+}
+#item .dish li{
+    display: block;
+    padding: 20px ;
+    margin: 5px ;
+    font-size: 22px;
+    font-family:"Bree Serif", serif;
+}
+.order{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dishes{
+    margin: 5px;
+}
+.order img{
+    width: 380px;
+    height: 310px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.dishes p{
+    padding: 3px;
+    text-align: justify;
+    font-size: 18px;
+    font-family:"Bree Serif", serif ;
+}
+#bottom{
+    /* border: 2px solid navy; */
+    margin: 40px;
+    text-align: center;
+    padding: 20px; 
+}
+#bottom h1{
+    font-size: 30px;
+    font-family:"Bree Serif", serif;
+}
+#bottom button{
+    margin-top: 30px;
+    font-size: 22px;
+    color:navy;
+    font-family: "Bree Serif", serif;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    background-color: #afbed8;
+}
+#bottom button:hover{
+    background-color: darkred;
+    color: white;
+}
+

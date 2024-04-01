@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* NAVIGATION BAR */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top:0px;
+}
+#navbar::before{
+    content: "";
+    background-color: white;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+#logo{
+    margin: 10px 25px;
+}
+#logo img{
+    height: 80px;
+    width: 80px;
+}
+#navbar ul{
+    display: flex;
+    font-family: "Pacifico", cursive;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 25px;
+    margin: 25px;
+}
+#navbar ul li a{
+    color:black;
+    display: block;
+    padding: 3px 35px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color:darkred;
+    text-decoration:underline;
+}
+
+/* CHEF SECTION */
+
+#chef_section{
+    height: 700px;
+    position: relative;
+}
+#chef_section::before{
+    content: "";
+    position: absolute;
+    background: url("about_bg.jpg") no-repeat center center/cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+#chef_section h1{
+    display: block;
+    padding: 10px;
+    font-family: "Bree Serif", serif;
+    text-align: center;
+    font-size: 45px;
+}
+#chef{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chef-item{
+    padding: 10px;
+    margin: 6px 8px;
+}
+.chef-item img{
+    width: 260px;
+    height: 310px;
+    object-fit: cover;
+}
+.chef-item h2{
+    font-family:"Bree Serif", serif;
+    text-align: center;
+}
+.chef-item p{
+    font-family:"Bree Serif", serif;
+    font-size: 20px;
+    text-align: center;
+    background-color: #faebd78f;
+    padding: 6px ;
+    border-radius: 10px;
+}
+#chef_section h3{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 40px;  
+}
+   

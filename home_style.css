@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* NAVIGATION BAR */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top:0px;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity:0.6;
+}
+#logo{
+    margin: 10px 25px;
+}
+#logo img{
+    height: 80px;
+    width: 80px;
+    mix-blend-mode:multiply;
+}
+#navbar ul{
+    display: flex;
+    font-family: "Pacifico", cursive;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 25px;
+}
+#navbar ul li a{
+    color:black;
+    display: block;
+    padding: 3px 55px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color:yellow;
+    text-decoration:underline;
+}
+
+/* HOME SECTION */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 170px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background:url("bg4.jpg") no-repeat center center/cover;
+    background-attachment: fixed;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#home h1{
+    color: black;
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 40px;
+    margin-top: 200px;
+}
+#home p{
+    color: black;
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+.btn{
+    padding: 6px 20px;
+    margin:30px;
+    padding: 9px 18px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+.btn:hover{
+    background-color: black;
+    color: aliceblue;  
+    cursor: pointer;
+}
+.img img{
+    margin-top: 200px;
+    height: 300px;
+    padding: 30px;
+    float: right;
+}
+.content{
+    height: 50%;
+    margin-top: 200px;
+}
+.img{
+    position: absolute;
+}
+.img h1{
+    margin-left: 9px;
+    margin-top: 230px;
+    font-size: 30px;
+    font-family:"Bree Serif", serif;
+    text-align: center;
+}
+.img p{
+    font-family:"Bree Serif", serif ;
+    padding: 10px;
+    text-align: justify;
+}
+.img2{
+    position: absolute;
+}
+.img2 img{
+    margin-top:500px;
+    height: 300px;
+    width: 708px;
+    padding: 30px;
+    float: left;
+    object-fit: cover;
+}
+.img2 h1{
+    margin-left: 9px;
+    font-size: 30px;
+    font-family:"Bree Serif", serif;
+    margin-top: 550px;
+    text-align: center;
+}
+.img2 p{
+    font-family:"Bree Serif", serif ;
+    padding: 10px;
+    text-align: justify;
+}
+.img3{
+    position: absolute;
+}
+.img3 img{
+    margin-top:800px;
+    height: 300px;
+    width: 450px;
+    padding: 30px;
+    float:right;
+    object-fit: cover;
+}
+.img3 h1{
+    margin-left: 9px;
+    font-size: 30px;
+    font-family:"Bree Serif", serif;
+    margin-top: 850px;
+    text-align: center;
+}
+.img3 p{
+    font-family:"Bree Serif", serif ;
+    padding: 10px;
+    text-align: justify;
+}
+
+#last{
+    background:url("leaves.jpg") no-repeat center center/cover;
+    width: 100%;
+    display: block;
+    margin:1200px auto;
+    background-attachment: fixed;
+}
+#info h2{
+    display: block;
+    color: black;
+    font-family:"Bree Serif", serif;
+    font-size: 30px;
+    text-align: center;
+}
+.box h4{
+    display: block;
+    padding: 5px;
+    font-family:"Bree Serif", serif;
+    font-size: 19px;
+    text-align: center;
+}
+.box h5{
+    display: block;
+    padding: 5px;
+    font-family:"Bree Serif", serif;
+    font-size: 19px;
+    text-align: center;
+} 
+.box p{
+    display: block;
+    padding-top: 10px;
+    color: black;
+    font-family:"Bree Serif", serif;
+    font-size: 25px;
+    text-align: center;
+}
+button{
+    margin-top: 30px;
+    font-size: 22px;
+    color:white;
+    font-family: "Bree Serif", serif;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    background-color: darkred;
+}
+button:hover{
+    background-color: white;
+    color:darkgreen;
+}
